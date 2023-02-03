@@ -140,7 +140,7 @@ return ramz.sendMessage(from, { contacts: { displayName: name, contacts: [{ vcar
 }
 
 
-const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `Bot Created By Ramaa Gnnz\n`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;RamaaBot,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': { url: 'https://telegra.ph/file/3c485ff201d9337be14ef.jpg' }}}}
+const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `Bot Created By Yüshā Fähād\n`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;YushaBotz,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': { url: 'https://i.postimg.cc/N09y49Jy/IMG-20230131-WA0109.png' }}}}
 function parseMention(text = '') {
 return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')
 }
@@ -182,6 +182,7 @@ var footer_nya =`Creator by - ${setting.ownerName}`
 ┃
 ┣» .listproduk
 ┣» .bayar
+┣» .payment
 ┣» .script
 ┣» .owner
 ┣» .donasi
@@ -295,9 +296,8 @@ case 'group':
 case 'grup':
 case 'groupadmin':
 	ramz.sendMessage(from, 
-{text: `*Group Ramaa Gnnz*\n
-Group1 :https://chat.whatsapp.com/FxhPGFS8ZhL9E4nhk1X7Rg
-Group2 : https://chat.whatsapp.com/JYjwm7vfjdB69FrnyuwoEF`},
+{text: `*Group Topup*\n
+Group1 :`},
 {quoted: msg})
 break
 case 'donasi': case 'donate':{
